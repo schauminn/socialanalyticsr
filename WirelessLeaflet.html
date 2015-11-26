@@ -10,7 +10,7 @@
 </head>
 <style>
 html, body, #map {
-    height: 97%;
+    height: 100%;
 }
 </style>
 <body>
@@ -2082,7 +2082,7 @@ html, body, #map {
 			var radius = e.accuracy / 2;
 
 			L.marker(e.latlng).addTo(map)
-				.bindPopup("You are within " + radius + " meters from this point").openPopup();
+				.bindPopup("You are probably " + radius + " meters from this point<br>" + "Look around for WiFi signals!").openPopup();
 
 			L.circle(e.latlng, radius).addTo(map);
 		}
